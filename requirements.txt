@@ -2,7 +2,8 @@ torch
 torchvision
 transformers
 accelerate
-pillow
+Pillow
 numpy
 pandas
+matplotlib
 tqdm
