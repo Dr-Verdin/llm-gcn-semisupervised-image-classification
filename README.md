@@ -1,8 +1,10 @@
+# Project Setup
+
 ## Prerequisites
 
 - Python 3.10+
 - Git
-- 7-Zip (`p7zip`)
+- 7-Zip (or p7zip)
 
 ### Ubuntu/Debian
 
@@ -11,61 +13,50 @@ sudo apt update
 sudo apt install p7zip-full
 ```
 
-### Windows
-
-Install 7-Zip from https://www.7-zip.org/
-
 ### macOS
 
 ```bash
 brew install p7zip
 ```
 
-
-## Prerequisites
-
-- Python 3.10+
-- Git
-- 7-Zip (`p7zip`)
-
-### Ubuntu/Debian
-
-```bash
-sudo apt update
-sudo apt install p7zip-full
-```
-
 ### Windows
 
-Install 7-Zip from https://www.7-zip.org/
-
-### macOS
-
-```bash
-brew install p7zip
-```
+Download and install from:
+https://www.7-zip.org/
 
 
+---
 
 ## Installation
-
-Clone the repository:
 
 ```bash
 git clone https://github.com/<username>/llm-gcn-semisupervised-image-classification.git
 cd llm-gcn-semisupervised-image-classification
 ```
 
-Create a virtual environment (recommended):
+## Optional but recommended) Create virtual environment
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate      # Linux/macOS
-# .venv\Scripts\activate       # Windows
 ```
 
-Install the required packages:
+Activate it:
+
+# Linux / macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+## Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+```markdown
+## Reproducibility
+
+This repository was used to generate the results reported in the paper.  
+All experiments assume the dataset is downloaded from Zenodo and placed in the `data/` directory.
 ```

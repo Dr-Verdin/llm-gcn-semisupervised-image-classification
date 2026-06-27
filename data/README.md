@@ -1,36 +1,40 @@
-Zenodoa# Dataset
-
-The datasets used in this work are available at:
-
-- Corel5k Images:
-- Scene Images:
-- ...
-
-Download the files and extract them into this folder.
-
-The final structure should be:
-
-data/
-├── corel5k/
-├── scene/
-└── ...
-
--------------------------------------------------
-
 # Dataset
 
 The datasets used in this work are hosted on Zenodo due to GitHub file size limitations.
 
 ## Download
 
-Download the dataset archive from the Zenodo record:
+Download all dataset files from the Zenodo record:
 
-**[Zenodo link]**
+**DOI:** https://doi.org/...
 
-Place the downloaded file in this directory:
+Place the downloaded archives in this directory.
 
+## Directory Structure
+
+Place the downloaded archives in this directory:
+
+```text
+data/
+├── corel5k_images.7z
+├── scene_images.7z
+└── ...
 ```
-data/corel5k_images.7z
+
+The notebooks will extract the archives automatically (if necessary) and use the extracted folders during execution.
+
+After extraction, the directory should look like:
+
+```text
+data/
+├── corel5k_images.7z
+├── corel5k_images/
+├── scene_images.7z
+├── scene_images/
+└── ...
 ```
 
-After downloading, run the notebook `01_dataset_preparation.ipynb` to extract the dataset.
+## Notes
+
+* Do not rename the downloaded files, as the notebooks expect the original filenames.
+* If the datasets have already been extracted, the notebooks will skip the extraction step.
